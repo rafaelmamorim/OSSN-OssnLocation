@@ -7,7 +7,7 @@ Screenshot of OssnLocation
 ![Screenshot of OssnLocation component](https://www.rafaelamorim.com.br/temp/OssnLocation.png)
 
 Screenshot of OssnLocation admin 
-![Screenshot of OssnChat component](https://www.rafaelamorim.com.br/temp/ImagesInMessage1.png)
+![Screenshot of OssnChat component](https://www.rafaelamorim.com.br/temp/OssnLocation-admin.png)
 
 ## Installation
 
