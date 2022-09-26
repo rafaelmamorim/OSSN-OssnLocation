@@ -13,8 +13,5 @@
 $es = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Ingresar la Ubicación',
-		'ossn:location:settings:save:error' => '¡No se puede guardar la configuración! Por favor, inténtelo de nuevo más tarde.',
-		'ossn:location:settings:saved' => '¡Ajustes guardados!',
-		'ossn:location:admin:notice' => 'Página de Inicio',
 );
 ossn_register_languages('es', $es); 

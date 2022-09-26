@@ -9,4 +9,13 @@
  * @link      https://www.opensource-socialnetwork.org/
  */
  ?>
- <label><?php echo ossn_print('settings');?> (<?php echo ossn_print('ossn:location:admin:notice');?>)</label>
+ <div>
+	<label>API</label>
+    <input type="text" value="<?php echo ossn_location_api_key();?>" name="mapbox_api_key" autocomplete="off"/>
+</div>
+<div>
+	<p><?php echo ossn_print('save');?></p>
+</div>
+<div>
+	<input type="submit" value="<?php echo ossn_print('save');?>" class="btn btn-success btn-sm" />
+</div>

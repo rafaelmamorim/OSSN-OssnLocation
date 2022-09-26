@@ -11,8 +11,5 @@
 $tr = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Konum Gir',
-		'ossn:location:settings:save:error' => 'Ayarlar kaydedilemedi! Lütfen daha sonra tekrar dene.',
-		'ossn:location:settings:saved' => 'Ayarlar kaydedildi!',
-		'ossn:location:admin:notice' => 'Site Duyurusu',
 );
 ossn_register_languages('tr', $tr);

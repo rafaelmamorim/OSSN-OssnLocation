@@ -11,8 +11,5 @@
 $en = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Inserisci luogo',
-		'ossn:location:settings:save:error' => 'Non posso aggiornare le impostazioni, prova pi� tardi!',
-		'ossn:location:settings:saved' => 'Impostazioni aggiornate!',
-		'ossn:location:admin:notice' => 'Homepage Posts',
 );
 ossn_register_languages('it', $en);

@@ -11,8 +11,5 @@
 $he = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'מיקום',
-		'ossn:location:settings:save:error' => 'לא ניתן לשמור הגדרות, נסו שנית מאוחר יותר.',
-		'ossn:location:settings:saved' => 'הגדרות נשמרו!',
-		'ossn:location:admin:notice' => 'פוסטים של דף הבית',
 );
 ossn_register_languages('he', $he);

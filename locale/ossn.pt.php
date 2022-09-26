@@ -11,8 +11,5 @@
 $pt = array(
 		'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Adicionar localização',
-		'ossn:location:settings:save:error' => 'Não foi possível salvar as configurações! Tente novamente mais tarde.',
-		'ossn:location:settings:saved' => 'Configurações salvas!',
-		'ossn:location:admin:notice' => 'Postagens na Página Inicial',
 );
 ossn_register_languages('pt', $pt);

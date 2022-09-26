@@ -11,8 +11,5 @@
 $ru = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Введите месторасположение',
-		'ossn:location:settings:save:error' => 'Не получилось сохранить настройки. Попробуйте позже.',
-		'ossn:location:settings:saved' => 'Настройки сохранены!',
-		'ossn:location:admin:notice' => 'Мои записи',
 );
 ossn_register_languages('ru', $ru);

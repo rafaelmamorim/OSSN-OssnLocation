@@ -11,8 +11,5 @@
 $en = array(
 		'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Enter Location',
-		'ossn:location:settings:save:error' => 'Cannot save settings! Please try again later.',
-		'ossn:location:settings:saved' => 'Settings saved!',
-		'ossn:location:admin:notice' => 'Homepage Posts',
 );
 ossn_register_languages('en', $en);

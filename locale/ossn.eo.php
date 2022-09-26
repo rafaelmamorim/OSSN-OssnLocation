@@ -11,8 +11,5 @@
 $eo = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Enskribi lokon',
-		'ossn:location:settings:save:error' => 'Ne povas konservi agordon! Bonvolu reprovi poste.',
-		'ossn:location:settings:saved' => 'Agordoj estas konservita!',
-		'ossn:location:admin:notice' => 'Hejmpaĝaj afiŝoj',
 );
 ossn_register_languages('eo', $eo);

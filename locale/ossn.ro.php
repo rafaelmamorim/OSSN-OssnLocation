@@ -11,8 +11,5 @@
 $ro = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => 'Adauga locatia',
-		'ossn:location:settings:save:error' => 'Setarile nu pot fii salvate! Incearca mai tarziu.',
-		'ossn:location:settings:saved' => 'Setingurile au fost salvate!',
-		'ossn:location:admin:notice' => 'Pagina de acasa postari',
 );
 ossn_register_languages('ro', $ro);

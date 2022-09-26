@@ -11,8 +11,5 @@
 $nl = array(
     'ossnlocation' => 'OssnLocation',
     'enter:location' => 'Locatie toevoegen',
-    'ossn:location:settings:save:error' => 'Kon instellingen niet opslaan! Probeer het later nog eens.',
-    'ossn:location:settings:saved' => 'Instellingen opgeslagen!',
-    'ossn:location:admin:notice' => 'Homepage Posts',
 );
 ossn_register_languages('nl', $nl);

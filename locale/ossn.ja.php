@@ -11,8 +11,5 @@
 $ja = array(
 	    'ossnlocation' => 'OssnLocation',
 		'enter:location' => '場所を入力してください',
-		'ossn:location:settings:save:error' => '設定を保存できません！ 後でもう一度やり直してください。',
-		'ossn:location:settings:saved' => '設定を保存する！',
-		'ossn:location:admin:notice' => 'ホームページの投稿',
 );
 ossn_register_languages('ja', $ja);

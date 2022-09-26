@@ -11,8 +11,5 @@
 $fr = array(
     'ossnlocation' => 'OssnLocation',
     'enter:location' => 'Entrer Localisation',
-    'ossn:location:settings:save:error' => "Vous ne pouvez pas enregistrer les paramètres ! S'il vous plaît réessayer plus tard.",
-    'ossn:location:settings:saved' => 'Paramètres enregistrés !',
-    'ossn:location:admin:notice' => 'Accueil Messages',
 );
 ossn_register_languages('fr', $fr);
