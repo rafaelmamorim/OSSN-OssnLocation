@@ -1,10 +1,21 @@
 # OSSN-OssnLocation
 
-This component change the current location services (Algolia) to MapBox. The old service was shutting down in May-2022, but still working until September. See more details in https://www.algolia.com/blog/product/sunsetting-our-places-feature/
+This component change the current location services (Algolia) to MapBox. The old service was shutting down in May-2022, but still working until September. See more details in [Algolia web site](https://www.algolia.com/blog/product/sunsetting-our-places-feature/)
+
+## Screenshots
+Screenshot of OssnLocation
+![Screenshot of OssnLocation component](https://www.rafaelamorim.com.br/temp/OssnLocation.png)
+
+Screenshot of OssnLocation admin 
+![Screenshot of OssnChat component](https://www.rafaelamorim.com.br/temp/ImagesInMessage1.png)
+
+## Installation
+
+Installation procedures as the same for any component in OSSN. Also, it's required to admin put the [MapBox API Access Token](https://account.mapbox.com/access-tokens/) into OssnLocation admin page. 
 
 ## Limitations
 
-* The component was tested in OSSN 6.1 free version. Maybe some adjustments are required in other versions. Use by your own risk.
+* The component was tested in OSSN 6.1 free version. Maybe some adjustments are required in other versions. **Use by your own risk**.
 * As a freemium service, MapBox allows 100k requests/month free. More details in https://www.mapbox.com/pricing.
 
 ## Changes
