@@ -20,46 +20,56 @@
      */
     function ossn_wall_location() {
         $(document).ready(function() {
-            mapboxgl.accessToken = '<?php echo ossn_location_api_key(); ?>';
-            const geocoder = new MapboxGeocoder({
-                accessToken: mapboxgl.accessToken,
-                types: 'country,region,place,postcode,locality,neighborhood'
-            });
+            if ($('.ossn-wall-location').length) {
+                mapboxgl.accessToken = '<?php echo ossn_location_api_key(); ?>';
+                const geocoder = new MapboxGeocoder({
+                    accessToken: mapboxgl.accessToken,
+                    language: '<?php echo ossn_site_settings('language');?>',
+                    types: 'country,region,place,postcode,locality,neighborhood'
+                });
 
-            geocoder.addTo('#ossn-wall-location');
+                geocoder.addTo('#ossn-wall-location');
 
-            $('.mapboxgl-ctrl-geocoder--input').attr('id', 'ossn-wall-location-input');
-            $('.mapboxgl-ctrl-geocoder--input').attr('name', 'location');
-            $('.mapboxgl-ctrl-geocoder--input').attr('autocomplete', 'off');
-            $('.mapboxgl-ctrl-geocoder--input').attr('placeholder', '<?php echo ossn_print('enter:location'); ?>');
-            $('.mapboxgl-ctrl-geocoder--input').attr('aria-label', '<?php echo ossn_print('enter:location'); ?>');
+                // Clear results container when search is cleared.
+                geocoder.on('clear', () => {
+                    //results.innerText = '';
+                });
+
+                $('.mapboxgl-ctrl-geocoder--input').attr('id', 'ossn-wall-location-input');
+                $('.mapboxgl-ctrl-geocoder--input').attr('name', 'location');
+                $('.mapboxgl-ctrl-geocoder--input').attr('autocomplete', 'off');
+                $('.mapboxgl-ctrl-geocoder--input').attr('placeholder', '<?php echo ossn_print('enter:location'); ?>');
+                $('.mapboxgl-ctrl-geocoder--input').attr('aria-label', '<?php echo ossn_print('enter:location'); ?>');
+            }
         });
     }
 
     function ossn_location_init() {
         $(document).ready(function() {
-            //remove original button and div from OssnWall component
-            $('.ossn-wall-location').remove();
-            $('#ossn-wall-location').remove();
+            if ($('.ossn-wall-location').length) {
+                //remove original button and div from OssnWall component
+                $('.ossn-wall-location').remove();
+                $('#ossn-wall-location').remove();
 
-            $('.ossn-wall-photo').before('<li class="ossn-wall-location ossn-wall-container-control-menu-location"><i class="fa fa-map-marker-alt"></i></li> ');
-            $('#ossn-wall-photo').after('<div id="ossn-wall-location" style="display:none;"></div>');
+                $('.ossn-wall-photo').before('<li class="ossn-wall-location ossn-wall-container-control-menu-location"><i class="fa fa-map-marker-alt"></i></li> ');
+                $('#ossn-wall-photo').after('<div id="ossn-wall-location" style="display:none;"></div>');
 
-            $('.ossn-wall-container').find('.ossn-wall-friend').on('click', function() {
-                $('#ossn-wall-location').hide();
-                $('#ossn-wall-photo').hide();
-                $('#ossn-wall-friend').show();
-            });
-            $('.ossn-wall-container').find('.ossn-wall-location').on('click', function() {
-                $('#ossn-wall-friend').hide();
-                $('#ossn-wall-photo').hide();
-                $('#ossn-wall-location').show();
-            });
-            $('.ossn-wall-container').find('.ossn-wall-photo').on('click', function() {
-                $('#ossn-wall-friend').hide();
-                $('#ossn-wall-location').hide();
-                $('#ossn-wall-photo').show();
-            });
+                $('.ossn-wall-container').find('.ossn-wall-friend').on('click', function() {
+                    $('#ossn-wall-location').hide();
+                    $('#ossn-wall-photo').hide();
+                    $('#ossn-wall-friend').show();
+                });
+                $('.ossn-wall-container').find('.ossn-wall-location').on('click', function() {
+                    $('#ossn-wall-friend').hide();
+                    $('#ossn-wall-photo').hide();
+                    $('#ossn-wall-location').show();
+                });
+                $('.ossn-wall-container').find('.ossn-wall-photo').on('click', function() {
+                    $('#ossn-wall-friend').hide();
+                    $('#ossn-wall-location').hide();
+                    $('#ossn-wall-photo').show();
+                });
+            }
         });
     }
 

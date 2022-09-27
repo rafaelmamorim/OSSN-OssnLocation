@@ -20,6 +20,10 @@ Installation procedures as the same for any component in OSSN. Also, it's requir
 
 ## Changes
 
+- 1.1
+    - Add verification to load map only when necessary
+    - Set OSSN site language in MapBox script 
+    - Fix error when user cancel location search by click on X button
 - 1.0
     - Initial version. Tested in wall, user posts and groups.
 
