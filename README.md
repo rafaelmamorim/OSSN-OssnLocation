@@ -27,7 +27,6 @@ Just go to [this page.](https://account.mapbox.com/access-tokens)
 - 1.3
     - Fix loading current language #2, found by Michael Zülsdorff
     - found by Michael Zülsdorff
-    - Removed a "Save" text lost in admin page. 
     - Added contributors file
     - Added link to MapBox Access token into readme file
 - 1.2
