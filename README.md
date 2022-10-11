@@ -15,11 +15,23 @@ Installation procedures as the same for any component in OSSN. Also, it's requir
 
 ## Limitations
 
-* The component was tested in OSSN 6.1 free version. Maybe some adjustments are required in other versions. **Use by your own risk**.
+* The component was tested in OSSN 6.1 and 6.4, free and premium version. Maybe some adjustments are required in other versions. **Use by your own risk**.
 * As a freemium service, MapBox allows 100k requests/month free. More details in https://www.mapbox.com/pricing.
+
+## How to get an MapBox API Key
+
+Just go to [this page.](https://account.mapbox.com/access-tokens)
 
 ## Changes
 
+- 1.3
+    - Fix loading current language #2, found by Michael Zülsdorff
+    - found by Michael Zülsdorff
+    - Removed a "Save" text lost in admin page. 
+    - Added contributors file
+    - Added link to MapBox Access token into readme file
+- 1.2
+    - Removed a lost div tag in admin form
 - 1.1
     - Add verification to load map only when necessary
     - Set OSSN site language in MapBox script 
