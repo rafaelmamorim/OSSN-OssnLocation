@@ -25,8 +25,8 @@ Just go to [this page.](https://account.mapbox.com/access-tokens)
 ## Changes
 
 - 1.3
-    - Fix loading current language #2, found by Michael Zülsdorff
-    - found by Michael Zülsdorff
+    - Fix loading current language (#2), found by Michael Zülsdorff
+    - Fix GDPR issue(#1), found by Michael Zülsdorff
     - Added contributors file
     - Added link to MapBox Access token into readme file
 - 1.2
