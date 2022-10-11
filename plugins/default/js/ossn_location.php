@@ -24,7 +24,7 @@
                 mapboxgl.accessToken = '<?php echo ossn_location_api_key(); ?>';
                 const geocoder = new MapboxGeocoder({
                     accessToken: mapboxgl.accessToken,
-                    language: '<?php echo ossn_site_settings('language');?>',
+                    language: '<?php $ossnsite = new OssnSite(); echo $ossnsite->getSettings("language"); ?>',
                     types: 'country,region,place,postcode,locality,neighborhood'
                 });
 
