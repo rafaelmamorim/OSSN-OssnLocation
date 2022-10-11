@@ -25,7 +25,7 @@ function ossn_location() {
         ossn_register_action('location/admin/settings', __OSSN_LOCATION__ . 'actions/settings.php');
     }
     
-    if (ossn_location_api_key()){
+    if (ossn_location_api_key() && ossn_isLoggedin()){
         //unloading old Algolia places. 
         //Source: AutoLocationWorkaround by Michael Zülsdorff (https://www.opensource-socialnetwork.org/component/view/6097)
         ossn_unlink_external_js('places.min');    
